@@ -1,6 +1,7 @@
 package dev.amethystmc.Hub.Listeners;
 
 import dev.amethystmc.Core.Utils.MessageUtil;
+import dev.amethystmc.Hub.Utils.HubItems;
 import dev.amethystmc.Hub.Utils.HubScoreboard;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
@@ -27,6 +28,8 @@ public class PlayerJoinListener implements Listener
         MessageUtil.sendRawMessage(p, "&eConsider buying &bPremium &eat");
         MessageUtil.sendRawMessage(p, "&7&oshop.amethystmc.com");
         p.playSound(p.getLocation(), Sound.LEVEL_UP, 10, 10);
+
+        HubItems.giveItemsToPlayer(p);
     }
 
 }
