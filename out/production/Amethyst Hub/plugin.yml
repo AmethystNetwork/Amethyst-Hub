@@ -1,0 +1,6 @@
+name: Amethyst Hub
+main: dev.amethystmc.Hub.Hub
+authors: [DevGolem]
+version: 1.0
+description: AmethystMC Hub Plugin
+website: AmethystMC.com
