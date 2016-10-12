@@ -4,3 +4,4 @@ authors: [DevGolem]
 version: 1.0
 description: AmethystMC Hub Plugin
 website: AmethystMC.com
+depend: [Amethyst_Core]
