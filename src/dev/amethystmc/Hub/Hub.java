@@ -1,5 +1,6 @@
 package dev.amethystmc.Hub;
 
+import dev.amethystmc.Hub.Commands.HubDebugCommand;
 import dev.amethystmc.Hub.Listeners.PlayerJoinListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
@@ -18,6 +19,7 @@ public class Hub extends JavaPlugin
 
         instance = this;
         registerListeners();
+        registerCommands();
 
     }
 
@@ -32,7 +34,8 @@ public class Hub extends JavaPlugin
     public void registerCommands()
     {
 
-
+        HubDebugCommand hubDebugCommand = new HubDebugCommand("HubDebug", "hubDebug", "Hub Debug Command");
+        hubDebugCommand.register();
 
     }
 

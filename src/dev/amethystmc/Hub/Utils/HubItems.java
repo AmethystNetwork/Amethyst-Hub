@@ -65,7 +65,6 @@ public class HubItems
 
         p.getInventory().setItem(0, getServerSelectorItem());
         p.getInventory().setItem(1, getProfileItem(p));
-        p.getInventory().setItem(2, getShopItem());
 
         p.getInventory().setItem(4, getCosmeticItems());
 
