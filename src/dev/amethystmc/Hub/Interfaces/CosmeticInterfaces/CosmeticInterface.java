@@ -27,7 +27,7 @@ public class CosmeticInterface extends InterfaceUtil
 
         AmethystPlayer ap = new AmethystPlayer(p);
 
-        Inventory inv = Bukkit.createInventory(null, 45, getName());
+        Inventory inv = Bukkit.createInventory(null, 54, getName());
 
         if (!(Hat.hasHat(p)))
         {
@@ -80,6 +80,10 @@ public class CosmeticInterface extends InterfaceUtil
         inv.setItem(Cosmetic.PETS.getSlot(), ItemUtil.createItem(Material.BONE, "&e&l&nPets", " ", "&7&nDescription:", "&fGrab a pet that will follow you around", "&fthe whole network. You can even ride", "&fyour pet too!", " ", "&7&nCurrent Pet:", "&fNone", " ", "&7&nRequired Rank:", "&fPremium"));
         inv.setItem(Cosmetic.PARTICLES.getSlot(), ItemUtil.createItem(Material.BLAZE_POWDER, "&e&l&nParticles", " ", "&7&nDescription:", "&fSelect a nice particle effect to show up", "&fbehind you as you walk around the network!", " ", "&7&nCurrent Particles:", "&fNone", " ", "&7&nRequired Rank:", "&fPremium"));
         inv.setItem(Cosmetic.CRATE.getSlot(), ItemUtil.createItem(Material.CHEST, "&e&l&nCrate", " ", "&7&nDescription:", "&fUnlock unique cosmetic items from this crate.", "&fItems contain, Hats, Gadgets, and Particles!", " ", "&7&nCrate Keys:", "&fNone", " ", "&7&nRequired Rank:", "&fPremium"));
+
+        inv.setItem(48, ItemUtil.createItem(Material.DIAMOND, "&e&l&nGift Players", " ", "&7&nDescription:", "&fGift Players Cosmetic items", "&fby clicking this item!", "&fYou will be rewarded &e750 Tokens", "&ffor every gift that you give!"));
+        inv.setItem(49, ItemUtil.addGlow(ItemUtil.createItem(Material.TRIPWIRE_HOOK, "&e&l&nBuy Crates", " ", "&7&nDescription:", "&fPurchase Crate Keys with Tokens", "&fby clicking this item", "&for from our store!", "&b&oshop.amethystmc.com", " ", "&cPurchase 1 Key for &e1,500 Tokens")));
+        inv.setItem(50, ItemUtil.createItem(Material.ENDER_CHEST, "&e&l&nYour Gifts", " ", "&7&nDescription:", "&fView your gifts from other players", "&fby clicking this item!"));
 
         p.openInventory(inv);
 

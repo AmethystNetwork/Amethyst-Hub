@@ -21,7 +21,7 @@ public class HubItems
     public static ItemStack getProfileItem(Player p)
     {
 
-        return ItemUtil.createSkull(p.getName(), "&dYour Profile &8- &7Right Click", "&7Click to view Your Profile!");
+        return ItemUtil.createSkull(p.getName(), "&dProfile &8- &7Right Click", "&7Click to view Your Profile!");
 
     }
 
@@ -35,7 +35,7 @@ public class HubItems
     public static ItemStack getCosmeticItems()
     {
 
-        return ItemUtil.createItem(Material.ENDER_CHEST, "&dYour Cosmetics &8- &7Right Click", "&7Click to view Your Cosmetics!");
+        return ItemUtil.createItem(Material.ENDER_CHEST, "&dCosmetics &8- &7Right Click", "&7Click to view Your Cosmetics!");
 
     }
 

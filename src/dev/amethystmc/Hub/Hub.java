@@ -3,6 +3,7 @@ package dev.amethystmc.Hub;
 import dev.amethystmc.Hub.Commands.HubDebugCommand;
 import dev.amethystmc.Hub.Listeners.InventoryClickListener;
 import dev.amethystmc.Hub.Listeners.PlayerInteractEntityListener;
+import dev.amethystmc.Hub.Listeners.PlayerInteractListener;
 import dev.amethystmc.Hub.Listeners.PlayerJoinListener;
 import dev.amethystmc.Hub.NPC.NPCLocations;
 import org.bukkit.Bukkit;
@@ -34,6 +35,7 @@ public class Hub extends JavaPlugin
         pm.registerEvents(new PlayerJoinListener(), this);
         pm.registerEvents(new PlayerInteractEntityListener(), this);
         pm.registerEvents(new InventoryClickListener(), this);
+        pm.registerEvents(new PlayerInteractListener(), this);
 
     }
 
