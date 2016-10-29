@@ -16,17 +16,17 @@ import java.util.UUID;
 public enum ArrowTrail
 {
 
-    FLAME("Flame", ItemUtil.createItem(Material.BLAZE_POWDER, "&dFlame Trail"), Rank.PREMIUM, 11),
-    WATER("Water", ItemUtil.createItem(Material.WATER_BUCKET, "&dWater Trail"), Rank.PREMIUM, 12),
-    SLIME("Slime", ItemUtil.createItem(Material.SLIME_BALL, "&dSlime Trail"), Rank.PREMIUM, 13),
-    FIREWORK("Firework", ItemUtil.createItem(Material.FIREWORK, "&dFirework Trail"), Rank.PREMIUM, 14),
-    SMOKE("Smoke", ItemUtil.createItem(Material.FIREWORK_CHARGE, "&dSmoke Trail"), Rank.PREMIUM, 15),
-    SNOW("Snow", ItemUtil.createItem(Material.SNOW_BALL, "&dSnow Trail"), Rank.PREMIUM, 20),
-    HEART("Heart", ItemUtil.createItem(Material.REDSTONE, "&dHeart Trail"), Rank.PREMIUM, 21),
-    EMERALD("Emerald", ItemUtil.createItem(Material.EMERALD, "&dEmerald Trail"), Rank.PREMIUM, 22),
-    ENCHANTMENT("Enchantment", ItemUtil.createItem(Material.EXP_BOTTLE, "&dEnchantment Trail"), Rank.PREMIUM, 23),
+    FLAME("Flame", ItemUtil.createItem(Material.BLAZE_POWDER, "&aFlame Trail"), Rank.PREMIUM, 11),
+    WATER("Water", ItemUtil.createItem(Material.WATER_BUCKET, "&aWater Trail"), Rank.PREMIUM, 12),
+    SLIME("Slime", ItemUtil.createItem(Material.SLIME_BALL, "&aSlime Trail"), Rank.PREMIUM, 13),
+    FIREWORK("Firework", ItemUtil.createItem(Material.FIREWORK, "&aFirework Trail"), Rank.PREMIUM, 14),
+    SMOKE("Smoke", ItemUtil.createItem(Material.FIREWORK_CHARGE, "&aSmoke Trail"), Rank.PREMIUM, 15),
+    SNOW("Snow", ItemUtil.createItem(Material.SNOW_BALL, "&aSnow Trail"), Rank.PREMIUM, 20),
+    HEART("Heart", ItemUtil.createItem(Material.REDSTONE, "&aHeart Trail"), Rank.PREMIUM, 21),
+    EMERALD("Emerald", ItemUtil.createItem(Material.EMERALD, "&aEmerald Trail"), Rank.PREMIUM, 22),
+    ENCHANTMENT("Enchantment", ItemUtil.createItem(Material.EXP_BOTTLE, "&aEnchantment Trail"), Rank.PREMIUM, 23),
     REMOVE("Remove", ItemUtil.createItem(Material.BARRIER, "&cRemove Trail"), Rank.MEMBER, 24),
-    NONE("None", ItemUtil.createItem(Material.AIR), Rank.MEMBER, 25);
+    NONE("None", ItemUtil.createItem(Material.AIR), Rank.MEMBER, 0);
 
     String name;
     ItemStack stack;

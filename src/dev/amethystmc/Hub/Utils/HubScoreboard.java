@@ -16,19 +16,19 @@ public class HubScoreboard
         ScoreboardUtil board = new ScoreboardUtil(MessageUtil.colorize("&d&lAmethystMC"));
 
         board.blankLine();
-        board.add(MessageUtil.colorize("&5Rank:"));
-        board.add(MessageUtil.colorize("&fN/A"));
+        board.add(MessageUtil.colorize("&e&lRank:"));
+        board.add(MessageUtil.colorize("&bN/A"));
         board.blankLine();
-        board.add(MessageUtil.colorize("&5Tokens:"));
-        board.add(MessageUtil.colorize("&fN/A"));
+        board.add(MessageUtil.colorize("&e&lTokens:"));
+        board.add(MessageUtil.colorize("&bN/A"));
         board.blankLine();
-        board.add(MessageUtil.colorize("&5Tag:"));
-        board.add(MessageUtil.colorize("&fN/A"));
+        board.add(MessageUtil.colorize("&e&lTag:"));
+        board.add(MessageUtil.colorize("&bN/A"));
         board.blankLine();
-        board.add(MessageUtil.colorize("&5Server:"));
-        board.add(MessageUtil.colorize("&fN/A"));
+        board.add(MessageUtil.colorize("&e&lServer:"));
+        board.add(MessageUtil.colorize("&bN/A"));
         board.blankLine();
-        board.add(MessageUtil.colorize("&ewww.AmethystMC.com"));
+        board.add(MessageUtil.colorize("&f&lwww.AmethystMC.com"));
 
         board.build();
         board.send(p);

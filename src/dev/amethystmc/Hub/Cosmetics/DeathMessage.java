@@ -24,7 +24,7 @@ public enum DeathMessage
     ILL_GET_YOU_NEXT_TIME("I'll get you next time", "&2I'll get you next time!", ItemUtil.createItem(Material.ANVIL, "&2I'll get you next time!"), Rank.PREMIUM, 20),
     RIP("RIP", "&bRIP", ItemUtil.createItem(Material.ANVIL, "&bRIP"), Rank.PREMIUM, 21),
     REMOVE("Remove", " ", ItemUtil.createItem(Material.BARRIER, "&cRemove your Death Message"), Rank.MEMBER, 22),
-    NONE("None", "", ItemUtil.createItem(Material.AIR), Rank.MEMBER, 23);
+    NONE("None", "", ItemUtil.createItem(Material.AIR), Rank.MEMBER, 0);
 
     String name;
     String deathMessage;

@@ -14,49 +14,42 @@ public class HubItems
     public static ItemStack getServerSelectorItem()
     {
 
-        return ItemUtil.createItem(Material.COMPASS, "&dServer Selector &8- &7Right Click", "&7Click this to open up the Server Selector!");
+        return ItemUtil.createItem(Material.COMPASS, "&aServer Selector", "&7Click this to open up the Server Selector!");
 
     }
 
     public static ItemStack getProfileItem(Player p)
     {
 
-        return ItemUtil.createSkull(p.getName(), "&dProfile &8- &7Right Click", "&7Click to view Your Profile!");
+        return ItemUtil.createSkull(p.getName(), "&aProfile", "&7Click to view Your Profile!");
 
     }
 
     public static ItemStack getShopItem()
     {
 
-        return ItemUtil.createItem(Material.DIAMOND, "&dShop &8- &7Right Click", "&7Click to open the Shop!");
+        return ItemUtil.createItem(Material.DIAMOND, "&aShop", "&7Click to open the Shop!");
 
     }
 
     public static ItemStack getCosmeticItems()
     {
 
-        return ItemUtil.createItem(Material.ENDER_CHEST, "&dCosmetics &8- &7Right Click", "&7Click to view Your Cosmetics!");
+        return ItemUtil.createItem(Material.CHEST, "&aCosmetics", "&7Click to view Your Cosmetics!");
 
     }
 
-    public static ItemStack getPlayersVisibileItem()
+    public static ItemStack getSettingsItem()
     {
 
-        return ItemUtil.createItem(Material.ENDER_PEARL, "&dPlayers&f: &aVisible &8- &7Right Click", "&7Click to Hide Players!");
-
-    }
-
-    public static ItemStack getPlayersHiddenItem()
-    {
-
-        return ItemUtil.createItem(Material.ENDER_PEARL, "&dPlayers&f: &cHidden &8- &7Right Click", "&7Click to Show Players!");
+        return ItemUtil.createItem(Material.REDSTONE_COMPARATOR, "&aSettings", "&7Click to open up the Settings Menu!");
 
     }
 
     public static ItemStack getLobbySelectorItem()
     {
 
-        return ItemUtil.createItem(Material.HOPPER, "&dLobby Selector &8- &7Right Click", "&7Click to open up the Lobby Selector!");
+        return ItemUtil.createItem(Material.HOPPER, "&aLobby Selector", "&7Click to open up the Lobby Selector!");
 
     }
 
@@ -68,7 +61,7 @@ public class HubItems
 
         p.getInventory().setItem(4, getCosmeticItems());
 
-        p.getInventory().setItem(7, getPlayersVisibileItem());
+        p.getInventory().setItem(7, getSettingsItem());
         p.getInventory().setItem(8, getLobbySelectorItem());
 
     }

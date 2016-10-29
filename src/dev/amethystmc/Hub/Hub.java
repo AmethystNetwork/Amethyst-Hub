@@ -1,10 +1,9 @@
 package dev.amethystmc.Hub;
 
+import dev.amethystmc.Hub.Commands.HeadCommand;
 import dev.amethystmc.Hub.Commands.HubDebugCommand;
-import dev.amethystmc.Hub.Listeners.InventoryClickListener;
-import dev.amethystmc.Hub.Listeners.PlayerInteractEntityListener;
-import dev.amethystmc.Hub.Listeners.PlayerInteractListener;
-import dev.amethystmc.Hub.Listeners.PlayerJoinListener;
+import dev.amethystmc.Hub.Listeners.*;
+import dev.amethystmc.Hub.NPC.HologramLocations;
 import dev.amethystmc.Hub.NPC.NPCLocations;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
@@ -25,6 +24,7 @@ public class Hub extends JavaPlugin
         registerListeners();
         registerCommands();
         NPCLocations.spawnShops();
+        HologramLocations.spawnHolograms();
 
     }
 
@@ -36,6 +36,7 @@ public class Hub extends JavaPlugin
         pm.registerEvents(new PlayerInteractEntityListener(), this);
         pm.registerEvents(new InventoryClickListener(), this);
         pm.registerEvents(new PlayerInteractListener(), this);
+        pm.registerEvents(new PlayerQuitListener(), this);
 
     }
 
@@ -43,6 +44,8 @@ public class Hub extends JavaPlugin
     {
 
         HubDebugCommand hubDebugCommand = new HubDebugCommand("HubDebug", "hubDebug", "Hub Debug Command");
+        HeadCommand headCommand = new HeadCommand("Head", "head", "Head Command");
+        headCommand.register();
         hubDebugCommand.register();
 
     }

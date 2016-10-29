@@ -23,7 +23,7 @@ public class PlayerInteractListener implements Listener
         Action action = e.getAction();
         ItemStack i = p.getItemInHand();
 
-        if (action != Action.LEFT_CLICK_AIR && action != Action.LEFT_CLICK_BLOCK)
+        if (action != Action.LEFT_CLICK_AIR && action != Action.LEFT_CLICK_BLOCK && action != Action.PHYSICAL)
         {
 
             if (i.equals(HubItems.getServerSelectorItem()))

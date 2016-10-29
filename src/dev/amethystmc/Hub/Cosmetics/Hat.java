@@ -18,22 +18,22 @@ import java.util.UUID;
 public enum Hat
 {
 
-    GLASS("Glass", ItemUtil.createItem(Material.GLASS, "&dGlass Hat"), Rank.PREMIUM, 11),
-    SPONGE("Sponge", ItemUtil.createItem(Material.SPONGE, "&dSponge Hat"), Rank.PREMIUM, 12),
-    CACTUS("Cactus", ItemUtil.createItem(Material.CACTUS, "&dCactus Hat"), Rank.PREMIUM, 13),
-    GRASS("Grass", ItemUtil.createItem(Material.GRASS, "&dGrass Hat"), Rank.PREMIUM, 14),
-    IRON("Iron", ItemUtil.createItem(Material.IRON_BLOCK, "&dIron Hat"), Rank.PREMIUM, 15),
-    GOLD("Gold", ItemUtil.createItem(Material.GOLD_BLOCK, "&dGold Hat"), Rank.PREMIUM, 20),
-    DIAMOND("Diamond", ItemUtil.createItem(Material.DIAMOND_BLOCK, "&dDiamond Hat"), Rank.PREMIUM, 21),
-    EMERALD("Emerald", ItemUtil.createItem(Material.EMERALD_BLOCK, "&dEmerald Hat"), Rank.PREMIUM, 22),
-    WOOD("Wood", ItemUtil.createItem(Material.WOOD, "&dWood Hat"), Rank.PREMIUM, 23),
-    WOOL("Wool", ItemUtil.createItem(Material.WOOL, "&dWool Hat"), Rank.PREMIUM, 24),
-    BRICK("Brick", ItemUtil.createItem(Material.BRICK, "&dCactus Hat"), Rank.PREMIUM, 29),
-    BEDROCK("Bedrock", ItemUtil.createItem(Material.BEDROCK, "&dBedrock Hat"), Rank.PREMIUM, 30),
-    OBSIDIAN("Obsidian", ItemUtil.createItem(Material.OBSIDIAN, "&dObsidian Hat"), Rank.PREMIUM, 31),
-    PATCLONE("PatClone", ItemUtil.createSkull("PatClone", "&dPatClone Hat"), Rank.PREMIUM, 32),
-    DEVGOLEM("DevGolem", ItemUtil.createSkull("DevGolem", "&dDevGolem Hat"), Rank.PREMIUM, 33),
-    NONE("None", ItemUtil.createItem(Material.AIR), Rank.MEMBER, 34);
+    GLASS("Glass", ItemUtil.createItem(Material.GLASS, "&aGlass Hat"), Rank.PREMIUM, 11),
+    SPONGE("Sponge", ItemUtil.createItem(Material.SPONGE, "&aSponge Hat"), Rank.PREMIUM, 12),
+    CACTUS("Cactus", ItemUtil.createItem(Material.CACTUS, "&aCactus Hat"), Rank.PREMIUM, 13),
+    GRASS("Grass", ItemUtil.createItem(Material.GRASS, "&aGrass Hat"), Rank.PREMIUM, 14),
+    IRON("Iron", ItemUtil.createItem(Material.IRON_BLOCK, "&aIron Hat"), Rank.PREMIUM, 15),
+    GOLD("Gold", ItemUtil.createItem(Material.GOLD_BLOCK, "&aGold Hat"), Rank.PREMIUM, 20),
+    DIAMOND("Diamond", ItemUtil.createItem(Material.DIAMOND_BLOCK, "&aDiamond Hat"), Rank.PREMIUM, 21),
+    EMERALD("Emerald", ItemUtil.createItem(Material.EMERALD_BLOCK, "&aEmerald Hat"), Rank.PREMIUM, 22),
+    WOOD("Wood", ItemUtil.createItem(Material.WOOD, "&aWood Hat"), Rank.PREMIUM, 23),
+    WOOL("Wool", ItemUtil.createItem(Material.WOOL, "&aWool Hat"), Rank.PREMIUM, 24),
+    BRICK("Brick", ItemUtil.createItem(Material.BRICK, "&aCactus Hat"), Rank.PREMIUM, 29),
+    BEDROCK("Bedrock", ItemUtil.createItem(Material.BEDROCK, "&aBedrock Hat"), Rank.PREMIUM, 30),
+    OBSIDIAN("Obsidian", ItemUtil.createItem(Material.OBSIDIAN, "&aObsidian Hat"), Rank.PREMIUM, 31),
+    PATCLONE("PatClone", ItemUtil.createSkull("PatClone", "&aPatClone Hat"), Rank.PREMIUM, 32),
+    DEVGOLEM("DevGolem", ItemUtil.createSkull("DevGolem", "adDevGolem Hat"), Rank.PREMIUM, 33),
+    NONE("None", ItemUtil.createItem(Material.AIR), Rank.MEMBER, 0);
 
     String name;
     ItemStack stack;

@@ -25,7 +25,7 @@ public enum  Tag
     KILLER("Killer", "&7[&eKiller&7]", ItemUtil.createItem(Material.NAME_TAG, "&7[&eKiller&7]"), Rank.PREMIUM, 21),
     SWAG("Swag", "&7[&2Swag&7]", ItemUtil.createItem(Material.NAME_TAG, "&7[&2Swag&7]"), Rank.PREMIUM, 22),
     BANNED("Banned", "&7[&4Banned&7]", ItemUtil.createItem(Material.NAME_TAG, "&7[&4Banned&7]"), Rank.PREMIUM, 23),
-    NONE("None", " ", ItemUtil.createItem(Material.AIR), Rank.MEMBER, 34);
+    NONE("None", " ", ItemUtil.createItem(Material.AIR), Rank.MEMBER, 0);
 
     public String name;
     public String tag;

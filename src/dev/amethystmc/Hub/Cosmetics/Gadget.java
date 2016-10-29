@@ -16,14 +16,16 @@ import java.util.UUID;
 public enum Gadget
 {
 
-    PAINTBALL_GUN("Paintball Gun", ItemUtil.createItem(Material.DIAMOND_BARDING, "&dPaintball Gun"), Rank.PREMIUM, 11),
-    EGG_CANNON("Egg Cannon", ItemUtil.createItem(Material.EGG, "&dEgg Cannon"), Rank.PREMIUM, 12),
-    JUMP_PAD("Jump Pad", ItemUtil.createItem(Material.GOLD_PLATE, "&dJump Pad"), Rank.PREMIUM, 13),
-    TNT_FOUNTAIN("TnT Fountain", ItemUtil.createItem(Material.TNT, "&dTnT Fountain"), Rank.PREMIUM, 14),
-    EXPLOSIVE_BOW("Explosive Bow", ItemUtil.createItem(Material.BOW, "&dExplosive Bow"), Rank.PREMIUM, 15),
-    FLYING_PIG("Flying Pig", ItemUtil.createItem(Material.SADDLE, "&dFlying Pig"), Rank.PREMIUM, 20),
-    FIREWORK("Firework", ItemUtil.createItem(Material.FIREWORK, "&dFirework"), Rank.PREMIUM, 21),
-    NONE("None", ItemUtil.createItem(Material.AIR), Rank.MEMBER, 32);
+    PAINTBALL_GUN("Paintball Gun", ItemUtil.createItem(Material.DIAMOND_BARDING, "&aPaintball Gun"), Rank.PREMIUM, 11),
+    EGG_CANNON("Egg Cannon", ItemUtil.createItem(Material.EGG, "&aEgg Cannon"), Rank.PREMIUM, 12),
+    JUMP_PAD("Jump Pad", ItemUtil.createItem(Material.GOLD_PLATE, "&aJump Pad"), Rank.PREMIUM, 13),
+    TNT_FOUNTAIN("TnT Fountain", ItemUtil.createItem(Material.TNT, "&aTnT Fountain"), Rank.PREMIUM, 14),
+    EXPLOSIVE_BOW("Explosive Bow", ItemUtil.createItem(Material.BOW, "&aExplosive Bow"), Rank.PREMIUM, 15),
+    FLYING_PIG("Flying Pig", ItemUtil.createItem(Material.SADDLE, "&aFlying Pig"), Rank.PREMIUM, 20),
+    FIREWORK("Firework", ItemUtil.createItem(Material.FIREWORK, "&aFirework"), Rank.PREMIUM, 21),
+    GRAPPLING_HOOK("Grappling Hook", ItemUtil.createItem(Material.FISHING_ROD, "&aGrappling Hook"), Rank.PREMIUM, 22),
+    FLYCART("FlyCart", ItemUtil.createItem(Material.MINECART, "&aFlyCart"), Rank.PREMIUM, 23),
+    NONE("None", ItemUtil.createItem(Material.AIR), Rank.MEMBER, 0);
 
     String name;
     ItemStack stack;
